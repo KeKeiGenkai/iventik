@@ -95,3 +95,23 @@ body {
   opacity: 1;
   transition-delay: 400ms;
 }
+.input-block {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white; /* Цвет меток */
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.input-text {
+  color: white; /* Цвет текста под полями для ввода */
+}
