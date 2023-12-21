@@ -115,3 +115,15 @@ input {
 .input-text {
   color: white; /* Цвет текста под полями для ввода */
 }
+.image-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  opacity: 0.5; /* Полупрозрачность по умолчанию */
+  transition: opacity 0.3s ease; /* Анимация изменения полупрозрачности */
+}
+
+/* При наведении кнопка становится полностью видимой */
+.box:hover .image-button {
+  opacity: 1;
