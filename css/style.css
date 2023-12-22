@@ -127,3 +127,21 @@ input {
 /* При наведении кнопка становится полностью видимой */
 .box:hover .image-button {
   opacity: 1;
+}
+/* style.css */
+
+/* Стили для разворачивающегося окошка */
+.image-options-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  opacity: 0.75; /* Прозрачность окошка */
+  transition: opacity 0.3s ease; /* Анимация изменения прозрачности */
+  display: none; /* По умолчанию окошко скрыто */
+}
+
+/* При наведении окошко становится полностью видимым */
+.box:hover .image-options-container {
+  display: block;
+}
