@@ -11,17 +11,21 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  background: #000;
+  background: url('https://i.postimg.cc/8cF1M2t5/lauer.png') center center fixed;
+  background-size: cover;
+  color: white; /* Цвет текста на фоне */
 }
 
 .container {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
   gap: 1em;
   width: 800px;
   height: 500px;
   transition: all 400ms;
+  margin: 0 auto; /* Выравнивание контейнера по центру */
+  justify-content: center; /* Центрирование окон внутри контейнера */
 }
 
 .container:hover .box {
@@ -30,7 +34,7 @@ body {
 }
 
 .container:hover {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   transition: all 400ms;
 }
 .box {
@@ -41,6 +45,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 150px; /* Новая ширина по умолчанию */
+}
+.box:hover {
+  width: 250px; /* Новая ширина при наведении */
 }
 
 .container .box:hover {
@@ -48,23 +56,31 @@ body {
 }
 
 .container:has(.box-1:hover) {
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-2:hover) {
-  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-3:hover) {
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-4:hover) {
-  grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-5:hover) {
-  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 3fr 1fr 1fr;
+}
+
+.container:has(.box-6:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
+}
+
+.container:has(.box-7:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
 }
 
 .box:nth-child(odd) {
