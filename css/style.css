@@ -11,7 +11,7 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  background: url('https://i.postimg.cc/8cF1M2t5/lauer.png') center center fixed;
+  background: url('https://i.postimg.cc/HnyC489N/1000008616-01.jpg') center center fixed;/*https://i.postimg.cc/8cF1M2t5/lauer.png*/
   background-size: cover;
   color: white; /* Цвет текста на фоне */
 }
@@ -46,6 +46,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 150px; /* Новая ширина по умолчанию */
+  margin: 0px; /* Оставляем отступы без изменений */
+  overflow: hidden;
+
+  flex-direction: column; /* Размещаем элементы в колонку */
+
 }
 .box:hover {
   width: 250px; /* Новая ширина при наведении */
@@ -95,7 +100,6 @@ body {
   content: attr(data-text);
   position: absolute;
   bottom: 20px;
-  background: #000;
   color: #fff;
   padding: 10px 10px 10px 14px;
   letter-spacing: 4px;
@@ -163,4 +167,123 @@ input {
 .image-options option {
   background-color: #fff;
   color: #000;
+}
+.data-text {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 400ms;
+  margin-bottom: 400px; /* Отрицательное значение для поднятия имени вверх */
+}
+.box:hover .data-text {
+  opacity: 1;
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-block input[type="number"] {
+  width: auto; /* Изначально ширина будет зависеть от содержимого */
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: rgba(169, 169, 169, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  max-width: 80px; /* Максимальная ширина для ограничения расширения */
+  text-align: center;
+}
+.input-block input[type="number"]::-webkit-inner-spin-button,
+.input-block input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-block input[type="number"] {
+  -moz-appearance: textfield;
+}
+.box.less-transparent {
+  filter: grayscale(100%) opacity(0.6);
+}
+.image-button2 {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+  opacity: 0.5; /* Полупрозрачность по умолчанию */
+  transition: opacity 0.3s ease; /* Анимация изменения полупрозрачности */
+  padding: 0; /* Убираем внутренний отступ */
+  background: none; /* Убираем фон у кнопки */
+  border: none; /* Убираем границы */
+}
+
+.image-button2 img {
+  max-width: 80px; /* Максимальная ширина иконки */
+  height: auto; /* Сохраняем пропорции */
+  border-radius: 50%; /* Закругляем углы иконки */
+}
+
+/* При наведении кнопка становится полностью видимой */
+.image-button2:hover {
+  opacity: 1;
+}
+.image-button3 {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  padding: 0;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.image-button3 img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.image-button3:hover {
+  opacity: 1;
+}
+
+.image-button4 {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  padding: 0;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Изменено значение margin-bottom */
+  margin-right: 80px; /* Добавлено новое свойство margin-right */
+}
+
+.image-button4 img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.image-button4:hover {
+  opacity: 1;
+}
+.container.non-transparent .box {
+  filter: grayscale(0%) opacity(100%);
 }

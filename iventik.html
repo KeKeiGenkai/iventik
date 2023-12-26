@@ -1,5 +1,3 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,100 +7,85 @@
 </head>
 <body>
 <div class="container">
-  <div class="box box-1" style="--img: url(https://i.postimg.cc/SK4k0VT2/Dimas1.png);" data-text="Dimedroll">
-    <div class="input-block">
-      <input type="text" id="name1" name="name1" placeholder="Kto nahui?">
-    </div>
-    <div class="input-block">
-      <input type="number" id="number1" name="number1" placeholder="coins">
-    </div>
-    <div class="image-options-container">
-      <select id="imageOptions1" class="image-options" onchange="changeImageFromSelect(1)">
-        <!-- Здесь будут варианты изображений для первой коробки -->
-        <option value="https://i.postimg.cc/SK4k0VT2/Dimas1.png">Dimas1</option>
-        <option value="https://i.postimg.cc/90kCvhKC/Dimas2.png">Dimas2</option>
-        <option value="https://i.postimg.cc/xdPY9Hhs/Dimas3.png">Dimas3</option>
-        <option value="https://i.postimg.cc/gctzwVJQ/Dimas4.png">Dimas4</option>
-        <option value="https://i.postimg.cc/8zMNnxHg/Dimas5.png">Dimas5</option>
-        <option value="https://i.postimg.cc/NfygRK2M/Dimas6.png">Dimas6</option>
-        <option value="https://i.postimg.cc/nrrnRzd3/Dimas7.png">Dimas7</option>
-        <option value="https://i.postimg.cc/X7TnLn9g/Dimas8.png">Dimas8</option>
-        <option value="https://i.postimg.cc/ZRKmnnhJ/Dimas9.png">Dimas9</option>
-
-        <!-- Добавьте другие изображения для первой коробки -->
-      </select>
+  <div class="box box-1" style="--img: url(https://i.postimg.cc/fkQQHWHR/1000008608-01.jpg);">
+    <div class="image-container">
+      <div class="data-text">Dimedroll</div> <!-- Перемещенный текст data-text -->
+      <div class="input-block">
+        <input type="number" id="number1" name="number1" placeholder="coins">
+      </div>
     </div>
   </div>
 
-  <div class="box box-2" style="--img: url(https://i.postimg.cc/3RZ6bhDS/img-2.jpg);" data-text="Varusha">
-    <div class="input-block">
-      <input type="text" id="name2" name="name2" placeholder="Kto nahui?">
-    </div>
-    <div class="input-block">
+  <div class="box box-2" style="--img: url(https://i.postimg.cc/k4ZmbvK8/1000008602-01.jpg);">
+    <div class="image-container">
+      <div class="data-text">Varusha</div> <!-- Перемещенный текст data-text -->
+      <div class="input-block">
       <input type="number" id="number2" name="number2" placeholder="coins">
     </div>
   </div>
-
-  <div class="box box-3" style="--img: url(https://i.postimg.cc/DZhHg0m4/img-3.jpg);" data-text="Mikola">
-    <div class="input-block">
-      <input type="text" id="name3" name="name3" placeholder="Kto nahui?">
-    </div>
-    <div class="input-block">
-      <input type="number" id="number3" name="number3" placeholder="coins">
-    </div>
   </div>
 
-  <div class="box box-4" style="--img: url(https://i.postimg.cc/KjqWx5ft/img-4.jpg);" data-text="Jiujitsa">
-    <div class="input-block">
-      <input type="text" id="name4" name="name4" placeholder="Kto nahui?">
-    </div>
-    <div class="input-block">
-      <input type="number" id="number4" name="number4" placeholder="coins">
-    </div>
-    <div class="image-options-container">
-      <select id="imageOptions4" class="image-options" onchange="changeImageFromSelect(4)">
-        <!-- Здесь будут варианты изображений для первой коробки -->
-        <option value="https://i.postimg.cc/SR9BykgW/IMG-20220413-211839-869.jpg">Ia1</option>
-        <option value="https://i.postimg.cc/qRNf58nD/IMG-20220413-211841-370.jpg">Ia2</option>
-        <option value="https://i.postimg.cc/QNWGgJjH/IMG-20220531-132719.jpg">Ia3</option>
-        <option value="https://i.postimg.cc/JnSwVG5r/IMG-20220618-083145-991.jpg">Ia4</option>
-        <option value="https://i.postimg.cc/4x1T74sP/IMG-20230702-175932-732.jpg">Ia5</option>
-        <option value="https://i.postimg.cc/pdXMDNdH/IMG-20231021-174824-757.jpg">Ia6</option>
-        <option value="https://i.postimg.cc/FHv4Hk51/IMG-20231209-175711-206.jpg">Ia7</option>
-        <option value="https://i.postimg.cc/xTKwhjJQ/IMG-20231210-225323-610.jpg">Ia8</option>
-        <option value="https://i.postimg.cc/02RgVKNZ/IMG-20231210-230151-683.jpg">Ia9</option>
-
-        <!-- Добавьте другие изображения для первой коробки -->
-      </select>
+  <div class="box box-3" style="--img: url(https://i.postimg.cc/cH6WCbg0/1000008585-01.jpg);">
+    <div class="image-container">
+      <div class="data-text">Mikola</div> <!-- Перемещенный текст data-text -->
+      <div class="input-block">
+        <input type="number" id="number3" name="number3" placeholder="coins">
+      </div>
     </div>
   </div>
 
-  <div class="box box-5" style="--img: url(https://i.postimg.cc/nrcWyW4H/img-5.jpg);" data-text="Lizer">
-    <div class="input-block">
-      <input type="text" id="name5" name="name5" placeholder="Kto nahui?">
-    </div>
-    <div class="input-block">
-      <input type="number" id="number5" name="number5" placeholder="coins">
-    </div>
-  </div>
-  <div class="box box-6" style="--img: url(https://i.postimg.cc/y8rCXQ33/IMG-20231210-230351-244.jpg);" data-text="Stasik">
-    <div class="input-block">
-      <input type="text" id="name6" name="name6" placeholder="Kto nahui?">
-    </div>
-    <div class="input-block">
-      <input type="number" id="number6" name="number5" placeholder="coins">
+  <div class="box box-4" style="--img: url(https://i.postimg.cc/zDbLPdds/1000008596-01.jpg);">
+    <div class="image-container">
+      <div class="data-text">Jiujitsa</div> <!-- Перемещенный текст data-text -->
+      <div class="input-block">
+        <input type="number" id="number4" name="number4" placeholder="coins">
+      </div>
     </div>
   </div>
-  <div class="box box-7" style="--img: url(https://i.postimg.cc/nrcWyW4H/img-5.jpg);" data-text="Smod">
-    <div class="input-block">
-      <input type="text" id="name7" name="name7" placeholder="Kto nahui?">
-    </div>
-    <div class="input-block">
-      <input type="number" id="number7" name="number7" placeholder="coins">
+
+  <div class="box box-5" style="--img: url(https://i.postimg.cc/wxCtKhZ7/1000008600-02.jpg);">
+    <div class="image-container">
+      <div class="data-text">Lizer</div> <!-- Перемещенный текст data-text -->
+      <div class="input-block">
+        <input type="number" id="number5" name="number5" placeholder="coins">
+      </div>
     </div>
   </div>
+
+  <div class="box box-6" style="--img: url(https://i.postimg.cc/RVwWvWxG/1000008598-01.jpg);">
+    <div class="image-container">
+      <div class="data-text">Stasik</div> <!-- Перемещенный текст data-text -->
+      <div class="input-block">
+        <input type="number" id="number6" name="number6" placeholder="coins">
+      </div>
+    </div>
+  </div>
+
+  <div class="box box-7" style="--img: url(https://i.postimg.cc/QdsHCjXD/1000008604-01.jpg);">
+    <div class="image-container">
+      <div class="data-text">Smod</div> <!-- Перемещенный текст data-text -->
+      <div class="input-block">
+        <input type="number" id="number7" name="number7" placeholder="coins">
+      </div>
+    </div>
+  </div>
+
+  <!-- Кнопка для случайных фраз -->
+  <button class="image-button2" onmouseover="addNonTransparentClass()" onclick="generateRandomPhrase()">
+    <img src="https://i.postimg.cc/HnHzr9pH/free-icon-d20-6727584.png" alt="Иконка">
+  </button>
+
+  <button class="image-button3" onmouseover="addNonTransparentClass()" onmouseout="removeNonTransparentClass()" onclick="generateRandomPhraseSet2()">
+    <img src="https://i.postimg.cc/x16jRhP7/free-icon-handsome-6565708.png" alt="Иконка 2">
+  </button>
+
+  <button class="image-button4" onmouseover="addNonTransparentClass()" onmouseout="removeNonTransparentClass()" onclick="generateRandomPhraseSet3()">
+    <img src="https://i.postimg.cc/6QTW1cjQ/free-icon-beauty-2763444.png" alt="Иконка 3">
+  </button>
+
 
 </div>
 <script src="js/script.js"></script>
+
 </body>
 </html>
