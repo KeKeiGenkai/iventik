@@ -1,0 +1,67 @@
+/* shop-style.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #151515; /* Задайте цвет фона по вашему вкусу */
+  margin: 0;
+}
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product {
+  background-color: #dcdcdc;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px; /* Закругляем углы рамки товара */
+  width: calc(20% - 20px); /* 25% ширины родительского контейнера с отступами width: 200px;*/
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Закругленные углы для изображения товара */
+}
+
+/* Изменения цвета текста */
+.product h3 {
+  color: #000000; /* Измените на желаемый цвет */
+}
+
+.price {
+  color: #1e1e1e; /* цвет для цены */
+  font-weight: bold;
+  margin-top: 10px;
+  border: 2px solid #000000; /* Добавляем рамку вокруг цены */
+  background-color: #f8f8f8; /* Цвет фона для цены */
+  padding: 5px; /* Добавляем внутренний отступ для текста цены */
+}
+
+.product-icon {
+  max-width: 100px; /* Максимальная ширина иконки */
+  margin-bottom: 5px; /* Расстояние между иконкой и остальным содержимым */
+}
+
+.product-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.98); /* Цвет текста для описания товара */
+}
+
+.product-price {
+  font-weight: bold;
+  color: #333; /* Цвет текста для цены товара */
+}
