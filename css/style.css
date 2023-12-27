@@ -22,7 +22,7 @@ body {
   grid-template-columns: repeat(7, 1fr);
   gap: 1em;
   width: 800px;
-  height: 500px;
+  height: 400px;
   transition: all 400ms;
   margin: 0 auto; /* Выравнивание контейнера по центру */
   justify-content: center; /* Центрирование окон внутри контейнера */

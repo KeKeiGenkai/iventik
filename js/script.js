@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     "Stasik",
     "Lizer",
     "Varusha",
+    "DianOCHKA",
     // ... (уникальные фразы для второго набора)
   ];
 
