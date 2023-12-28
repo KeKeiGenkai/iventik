@@ -19,7 +19,7 @@ body {
 .container {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr); /* Изменено количество колонок */
   gap: 1em;
   width: 800px;
   height: 400px;
@@ -34,7 +34,7 @@ body {
 }
 
 .container:hover {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   transition: all 400ms;
 }
 .box {
@@ -46,10 +46,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 150px; /* Новая ширина по умолчанию */
+  height: 480px; /* Новая высота по умолчанию */
   margin: 0px; /* Оставляем отступы без изменений */
   overflow: hidden;
-
   flex-direction: column; /* Размещаем элементы в колонку */
+  margin-top: -50px; /* Измените это значение на отрицательное число, чтобы поднять окна вверх */
 
 }
 .box:hover {
@@ -61,31 +62,35 @@ body {
 }
 
 .container:has(.box-1:hover) {
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-2:hover) {
-  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-3:hover) {
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-4:hover) {
-  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-5:hover) {
-  grid-template-columns: 1fr 1fr 1fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
 }
 
 .container:has(.box-6:hover) {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 3fr 1fr 1fr;
 }
 
 .container:has(.box-7:hover) {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
+}
+
+.container:has(.box-8:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
 }
 
 .box:nth-child(odd) {
@@ -176,7 +181,7 @@ input {
   text-transform: uppercase;
   opacity: 0;
   transition: all 400ms;
-  margin-bottom: 400px; /* Отрицательное значение для поднятия имени вверх */
+  margin-bottom: 380px; /* Отрицательное значение для поднятия имени вверх */
 }
 .box:hover .data-text {
   opacity: 1;
@@ -286,4 +291,29 @@ input {
 }
 .container.non-transparent .box {
   filter: grayscale(0%) opacity(100%);
+}
+/* Ваш CSS-код */
+.image-button5 {
+  position: fixed;
+  bottom: 110px; /* Переместите кнопку выше на 80 пикселей */
+  right: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  padding: 0;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.image-button5 img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.image-button5:hover {
+  opacity: 1;
 }

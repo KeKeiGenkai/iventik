@@ -98,6 +98,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // ... (уникальные фразы для третьего набора)
   ];
 
+  const phrasesSet4 = [
+    "Dimedroll",
+    "Stasik",
+    "Mikola",
+    "Lizer",
+    "Jiujitsa",
+    "Varusha",
+    "Smod",
+    "DianOCHKA",
+    // Добавьте другие фразы для четвёртого набора
+  ];
+
   window.generateRandomPhrase = function () {
     const randomIndex = Math.floor(Math.random() * phrases.length);
     const randomPhrase = phrases[randomIndex];
@@ -115,4 +127,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const randomPhrase = phrasesSet3[randomIndex];
     alert(randomPhrase);
   };
+
+  function generateRandomPhraseSet4() {
+    const randomIndex = Math.floor(Math.random() * phrasesSet4.length);
+    const randomPhrase = phrasesSet4[randomIndex];
+    alert(randomPhrase);
+  }
+
+  const button5 = document.querySelector('.image-button5');
+  if (button5) {
+    button5.addEventListener('click', function () {
+      generateRandomPhraseSet4();
+    });
+  }
 });
